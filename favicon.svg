@@ -1,0 +1,26 @@
+<svg width="130"
+     height="130"
+     viewBox="0 0 130 130"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <defs>
+        <path id="j" d="M40 40 H0 V50 H40 V40 H50 V0 H40 V40" />
+        <path id="e" d="M0 0 H50 V10 H0 V0 M0 20 H50 V30 H0 V20 M0 40 H50 V50 H0 V40"/>
+        <path id="r" d="M10 10 H0 V50 H10 V10 H50 V0 H10 V10" />
+        <path id="o" fill-rule="evenodd" d="M0 0 H50 V50 H0 V0 M10 10 H40 V40 H10 V10" />
+
+        <mask id="jet" stroke-width="2">
+            <rect x="0" y="0" width="190" height="190" fill="white"/>
+            <g transform="translate(10,10)">
+                <use xlink:href="#j" transform="translate(0,0)"/>
+                <use xlink:href="#e" transform="translate(60,0)"/>
+            </g>
+            <g transform="translate(10,70)">
+                <use xlink:href="#r" transform="translate(0,0)"/>
+                <use xlink:href="#o" transform="translate(60,0)"/>
+            </g>
+        </mask>
+    </defs>
+    <rect x="0" y="0" width="130" height="130" mask="url(#jet)"/>
+</svg>
